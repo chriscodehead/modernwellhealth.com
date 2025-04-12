@@ -80,16 +80,16 @@ $durationG = 'Daily for 120 Day(s)';
 
 $siteYear = date('Y');
 $companyNumber = '05065624';
-$siteLink = 'https://wehirehub.com/accounts/register';
-$siteRegister = 'https://wehirehub.com/accounts/register';
-$siteLogin = 'https://wehirehub.com/accounts/login';
-$site = 'https://wehirehub.com';
+$siteLink = 'https://modernwellhealth.com/accounts/register';
+$siteRegister = 'https://modernwellhealth.com/accounts/register';
+$siteLogin = 'https://modernwellhealth.com/accounts/login';
+$site = 'https://modernwellhealth.com';
 
-$domain = 'wehirehub.com';
+$domain = 'modernwellhealth.com';
 $siteName = $row['site_name'];
 $site_email = $row['site_email'];
-$siteEmail = "support@wehirehub.com";
-$siteEmail2 = "contact@wehirehub.com";
+$siteEmail = "support@modernwellhealth.com";
+$siteEmail2 = "contact@modernwellhealth.com";
 $sitePhone = $row['site_phone'];
 $sitePhone2 = $row['site_phone'];
 $siteFacebook = $row['site_facebook'];
@@ -408,7 +408,7 @@ class Cal extends DBConnection
         if ($stmt->execute()) {
             $row = $stmt->fetch(PDO::FETCH_ASSOC);
             if ($row['blocked_account'] == 1) {
-                return 'Your Account is locked please <a style="color:#FFF;" href="mailto:support@wehirehub.com"><u>contact support: support@wehirehub.com</u></a>';
+                return 'Your Account is locked please <a style="color:#FFF;" href="mailto:support@modernwellhealth.com"><u>contact support: support@modernwellhealth.com</u></a>';
             } else { //Blocked account error massage
 
                 if ($row['email'] == $email && $row['password'] == $password) {
@@ -465,12 +465,12 @@ class Cal extends DBConnection
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-<h6><img src="https://www.wehirehub.com/img/logo.png" /></h6>
+<h6><img src="https://www.modernwellhealth.com/img/logo.png" /></h6>
 <div style="font-size: 14px;">
 <p>
 Hello, ' . $name . '
 </p><p>
-This email contains your 2 Factor Authentication code to complete your login at wehirehub.com.
+This email contains your 2 Factor Authentication code to complete your login at modernwellhealth.com.
 </p>
 Email: ' . $email . '<br />
 Code: <strong>' . $code . '</strong><br />
@@ -494,14 +494,14 @@ AibtcELUrGfO+hxdgxkuvevK/VvcxzolPJirJzrWKMFhzG3sg15wjTu5pm/pvcxzolPJirY=
 </p>
 <p>Best Regard<br />
 Dulcet Care Support Team<br />
-Email: support@wehirehub.com<br />
+Email: support@modernwellhealth.com<br />
 </p>
  </div>
 </body>
 </html>';
         $header = "MIME-Version: 1.0" . "\r\n";
         $header .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $header .= 'From: Dulcet Care <support@wehirehub.com>' . "\r\n";
+        $header .= 'From: Dulcet Care <support@modernwellhealth.com>' . "\r\n";
         $retval = @mail($to, $subject, $message, $header);
         if ($retval = true) {
             return  'Mail sent successfully. Check ' . $email . ' email account for `Email Activation Link`!';
@@ -805,7 +805,7 @@ style="width:650px; min-width:650px; font-size:0pt; line-height:0pt; margin:0; f
                 <tr>
                     <td class="img m-center"
                         style="font-size:0pt; line-height:0pt; text-align:left;">
-                        <img src="https://wehirehub.com/img/logo.png"
+                        <img src="https://modernwellhealth.com/img/logo.png"
                             width="131" height="38" border="0"
                             alt="Logo" />
                     </td>
@@ -871,28 +871,28 @@ bgcolor="#fff">
                     <td class="img" width="55"
                         style="font-size:0pt; line-height:0pt; text-align:left;">
                         <a href="#" target="_blank"><img
-                                src="https://wehirehub.com/mail_images/ico_facebook.jpg"
+                                src="https://modernwellhealth.com/mail_images/ico_facebook.jpg"
                                 width="38" height="38" border="0"
                                 alt="" /></a>
                     </td>
                     <td class="img" width="55"
                         style="font-size:0pt; line-height:0pt; text-align:left;">
                         <a href="#" target="_blank"><img
-                                src="https://wehirehub.com/mail_images/ico_twitter.jpg"
+                                src="https://modernwellhealth.com/mail_images/ico_twitter.jpg"
                                 width="38" height="38" border="0"
                                 alt="" /></a>
                     </td>
                     <td class="img" width="55"
                         style="font-size:0pt; line-height:0pt; text-align:left;">
                         <a href="#" target="_blank"><img
-                                src="https://wehirehub.com/mail_images/ico_instagram.jpg"
+                                src="https://modernwellhealth.com/mail_images/ico_instagram.jpg"
                                 width="38" height="38" border="0"
                                 alt="" /></a>
                     </td>
                     <td class="img" width="38"
                         style="font-size:0pt; line-height:0pt; text-align:left;">
                         <a href="#" target="_blank"><img
-                                src="https://wehirehub.com/mail_images/ico_linkedin.jpg"
+                                src="https://modernwellhealth.com/mail_images/ico_linkedin.jpg"
                                 width="38" height="38" border="0"
                                 alt="" /></a>
                     </td>
@@ -908,7 +908,7 @@ bgcolor="#fff">
             Support Team NETZONE META TRADING
             <br />
             For more detail contact us:<br />
-            Email:info@wehirehub.com, support@wehirehub.com
+            Email:info@modernwellhealth.com, support@modernwellhealth.com
 
         </td>
     </tr>
@@ -939,7 +939,7 @@ from this mailing list.
     ';
         $header = "MIME-Version: 1.0" . "\r\n";
         $header .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $header .= 'From: NETZONE META TRADING <support@wehirehub.com>' . "\r\n";
+        $header .= 'From: NETZONE META TRADING <support@modernwellhealth.com>' . "\r\n";
         $retval = @mail($to, $subject, $message, $header);
 
         if ($retval = true) {

@@ -8,7 +8,7 @@
     function DBConnections()
     {
       $host_ = 'localhost';
-      $dbname_ = 'wehirehub';
+      $dbname_ = 'modernwellhealth';
       $user_ = 'root';
       $pass_ = '';
       try {

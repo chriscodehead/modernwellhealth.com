@@ -22,7 +22,7 @@
   --Black: #000000;
   --White: #ffffff;
   --Primary: #3c210e;
-  --Secondary: #fedac2;
+  --Secondary: #006;
   --Third: #f4d118;
   --Four: #c72929;
   --Color-1: #f5f1ed;
@@ -1931,7 +1931,7 @@ a:hover, a:focus {
   background-color: var(--Secondary);
 }
 .tf-btn.btn-color-white {
-  background-color: var(--White);
+  background-color: #006;
 }
 .tf-btn.has-boder {
   border: 2px solid var(--Primary);
@@ -1985,7 +1985,7 @@ a:hover, a:focus {
   overflow: hidden;
   z-index: 2;
   gap: 6px;
-  color: var(--Primary);
+  color: #fff;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -2338,6 +2338,7 @@ form.tf-radio {
 }
 .form-send-email .button-submit:hover button {
   animation: effect-send 0.4s ease-in;
+  background-color: #fff;
 }
 
 .form-consultation {
@@ -4006,6 +4007,7 @@ a.mapboxgl-ctrl-logo {
 .effec-icon:hover .item i,
 .effec-icon:hover .item svg {
   transform: rotateY(180deg);
+  color: #fff;
 }
 
 .animation-float,
@@ -4249,7 +4251,7 @@ a.mapboxgl-ctrl-logo {
 
 /*------------ nice-select ---------------- */
 [data-theme-color=theme-primary] {
-  --Secondary: #fedac2;
+  --Secondary: #006;
 }
 
 [data-theme-color=theme-green] {
@@ -4611,7 +4613,7 @@ a.mapboxgl-ctrl-logo {
   transition: all 0.3s ease;
 }
 .service-item:hover {
-  background-color: var(--Secondary);
+  background-color: #fedac2;
   box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
 }
 .service-item.style-2 {
@@ -7019,7 +7021,7 @@ a.mapboxgl-ctrl-logo {
 }
 
 input[value=theme-primary] + label {
-  background-color: #fedac2;
+  background-color: #006;
 }
 
 input[value=theme-green] + label {
@@ -7415,7 +7417,7 @@ input[value=theme-dark] + label {
     display: block;
   }
   #header-main.style-no-logo .header-inner-wrap {
-    padding: 14px 15px;
+    padding: 0px 15px;
   }
   #header-main.style-no-logo .mobile-button {
     display: block;
@@ -7647,6 +7649,7 @@ input[value=theme-dark] + label {
   }
   .tf-top-bar.style-has-logo .top-bar-right .list {
     justify-content: space-between;
+    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -7670,7 +7673,7 @@ input[value=theme-dark] + label {
   }
   .main-content,
   .main-content-2 {
-    padding-top: 70px !important;
+    padding-top: 0px !important;
     padding-bottom: 70px !important;
   }
   h2 {

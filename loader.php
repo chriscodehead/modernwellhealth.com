@@ -6,7 +6,7 @@
     <div class="loader">
     </div>
     <div class="icon">
-     <img src="images/logo/favicon.png" alt="">
+     <img src="img/favicon.png" alt="">
     </div>
    </div>
   </div>
